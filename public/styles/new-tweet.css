@@ -1,5 +1,6 @@
 .new-tweet {
     background-color: lightgray;
+    display: none;
     margin: 0 auto;
     padding: 1rem;
     width: 100%;

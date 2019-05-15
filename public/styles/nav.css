@@ -1,5 +1,8 @@
 #nav-bar {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
     width: 100%;
     background-color: #00a087;
@@ -22,4 +25,15 @@
     text-align: center;
     float: left;
     line-height: 80px;
+}
+
+.compose-button {
+    background-color: #e8fdff;
+    color: #00a087;
+    height: 4em;
+    opacity: 0.8;
+}
+
+.compose-button:hover {
+    opacity: 1;
 }

@@ -7,4 +7,9 @@ $(document).ready(function() {
             $(".counter").css("color", "#244751")
         }
     })
+
+    $(".compose-button").click(function() {
+        $(".new-tweet").slideToggle("slow");
+        $(".tweetbox").focus();
+    });
   });
