@@ -27,6 +27,8 @@
 .tweet {
   border-color: lightgray;
   border-style: solid;
+  opacity: 0.5;
+  margin-bottom: 1rem;
 }
 
 .tweet header {
@@ -62,6 +64,8 @@
 
 .tweet .body {
   padding: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 0.9rem;
 }
 
