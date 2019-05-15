@@ -59,7 +59,7 @@
     function renderTweets(tweets) {
         tweets.forEach(function(element) {
             let $tweetObj = createTweetElement(element)
-            $("#main-container").append($tweetObj)
+            $("#main-container").prepend($tweetObj)
         })
     }
     
@@ -118,7 +118,8 @@
           // serialize turns the output into a string
           data: $(this).serialize()
         }).done(function() {
-          console.log("request done")
+          $("#main-container").empty();
+          loadTweets();
         })
       }
     })
