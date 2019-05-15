@@ -1,26 +1,85 @@
 .new-tweet {
     background-color: lightgray;
-    border-radius: 25px;
-    width: 75%;
     margin: 0 auto;
-}
-
-h2 {
-    border-bottom: 1px solid black;
-    padding-top: 5%;
-    text-align: left;
+    padding: 1rem;
+    width: 100%;
 }
 
 .tweetbox {
-    width: 100%;
-    margin-bottom: 5%;
+  margin: auto;
+  margin-bottom: 1rem;
+  max-height: 10rem;
+  max-width: 100%;
+  min-height: 3rem;
+  min-width: 100%;
 }
 
-
-.counter {
-    float: right;
+.new-tweet footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#tweet-button {
-    margin-bottom: 5%;
+.new-tweet h2 {
+  margin-bottom: 1rem;
+}
+
+.tweet {
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.tweet header {
+  background-color: #00a087;
+  color: #e8fdff;
+  display: flex;
+  padding: 1rem;
+}
+
+.tweet header .user-avatar {
+  background: #e8fdff;
+  border-radius: 0.5rem;
+  height: 100%;
+  margin-right: 1rem;
+  width: 4rem;
+}
+
+.tweet .header-texts {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tweet header .user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tweet header .user-handle {
+  font-size: 0.9rem;
+}
+
+.tweet .body {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tweet .footer {
+  border-top-style: solid;
+  border-top-color: lightgray;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  padding: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .icon {
+  height: 100%;
+  width: 0.8rem;
 }

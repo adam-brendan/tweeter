@@ -25,6 +25,9 @@
     <!-- Character counter -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <!-- Tweet hover -->
+    <script type="text/javascript" src="/scripts/tweet-hover.js"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
@@ -40,17 +43,36 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <h1>Tweeter</h1>
-      <p>Phasellus dictum porttitor arcu, at tristique felis malesuada vel. In hac habitasse platea dictumst. Etiam a congue mi. Cras enim lorem, maximus nec purus vel, consectetur feugiat massa. Phasellus gravida, nulla id fringilla pulvinar, dui lectus varius nisl, aliquet cursus mi ipsum non tellus. Pellentesque non interdum arcu, nec volutpat lorem. Aliquam fermentum dui at enim blandit elementum. Suspendisse ac fermentum lorem, et ultricies metus.</p>
-      <div class="new-tweet">
-        <section class="new-tweet">
+      <section class="new-tweet rounded-corners">
         <h2>Compose Tweet</h2>
-         <form action="/tweets/" method="POST" >
-          <textarea class="tweetbox" name="text" placeholder="What are you humming about?"></textarea>
-           <input id="tweet-button" type="submit" value="Tweet">
-            <span class="counter">140</span>
-          </form>
-        </section>
-      </div>
+        <form action="/tweets/" method="POST" >
+        <textarea class="tweetbox" name="text" placeholder="What are you humming about?" rows="4"></textarea>
+        <footer>
+          <input id="tweet-button" type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </footer>
+        </form>
+      </section>
+      <section id="main-container" class="rounded-corners">
+        <article class="tweet rounded-corner-top">
+          <header class="rounded-corner-top">
+            <img class="user-avatar" src="/images/user.png">
+            <div class="header-texts">
+              <p class="user-name">Bill Fields</p>
+              <p class="user-handle">@BFields</p>
+            </div>
+          </header>
+          <p class="body">Never have I ever liked CSS.</p>
+          <footer class ="footer">
+            <p>10 days ago</p>
+            <div class="icons">
+              <img class="icon" src="/images/flag.png">
+              <img class="icon" src="/images/retweet.png">
+              <img class="icon" src="/images/favorite.png">
+            </div>
+          </footer>
+        </article>
+      </section>
     </main>
   </body>
 </html>

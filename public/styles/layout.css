@@ -31,6 +31,35 @@ body {
   background-color: white;
   padding-top: 100px;
   padding-left: 5%;
-  padding-right: 2%;
+  padding-right: 5%;
   padding-bottom: 2%;
  }
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#main-container {
+  background-color: white;
+  margin: 2rem auto 0;
+  width: 100%;
+}
+
+.tweet {
+  background-color: white;
+  border-color: lightgray;
+  margin: 0 auto;
+}
+
+.rounded-corners {
+    border-radius: 0.5rem;
+}
+
+.rounded-corner-top {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
