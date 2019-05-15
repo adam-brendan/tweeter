@@ -53,7 +53,12 @@ h2 {
 .tweet {
   background-color: white;
   border-color: lightgray;
+  opacity: 0.5;
   margin: 0 auto;
+}
+
+.tweet:hover {
+  opacity: 1;
 }
 
 .rounded-corners {
