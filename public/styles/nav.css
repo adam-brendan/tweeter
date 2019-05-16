@@ -30,8 +30,12 @@
 .compose-button {
     background-color: #e8fdff;
     color: #00a087;
-    height: 4em;
+    height: 3.5em;
     opacity: 0.8;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .compose-button:hover {

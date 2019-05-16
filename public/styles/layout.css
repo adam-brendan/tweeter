@@ -26,10 +26,10 @@ body {
  */
 
  main.container {
-  width: 450px;
+  width: 560px;
   margin: 0 auto;
   background-color: white;
-  padding-top: 100px;
+  padding-top: 5rem;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2%;
@@ -37,6 +37,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 5rem;
 }
 
 h2 {
