@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 1rem;
     width: 100%;
+    background-color: #00a087
 }
 
 .tweetbox {
@@ -130,6 +131,10 @@ article:hover .icons {
 
 #tweet-button {
   padding-right: 1rem;
+  background-color: #244751;
+  color: #e8fdff;
+  font-weight: bold;
+  padding: 0.8em;
 }
 
 .counter {
