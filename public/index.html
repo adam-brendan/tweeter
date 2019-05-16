@@ -23,7 +23,7 @@
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- Character counter -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/javascript-effects.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -47,8 +47,10 @@
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST" >
         <textarea class="tweetbox" name="text" placeholder="What are you humming about?" rows="4"></textarea>
-        <footer>
+        <footer class="footer-element">
           <input id="tweet-button" type="submit" value="Tweet">
+          <p id="zero-char"class="error">You have to type something!</p>
+          <p id="long-char" class="error">Your tweet is too long!</p>
           <span class="counter">140</span>
         </footer>
         </form>

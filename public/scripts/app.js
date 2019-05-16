@@ -107,10 +107,17 @@
       // prevents the event from opening a new page
       event.preventDefault();
       if ($(".tweetbox").val().length === 0) {
-        alert("You have to type something!")
+        $("#zero-char").addClass("displayError");
+        $(".tweetbox").addClass("errorTweetbox")
+        $("#long-char").removeClass("displayError");
       } else if ($(".tweetbox").val().length > 140) {
-        alert("Your tweet is too long!")
+        $("#long-char").addClass("displayError")
+        $(".tweetbox").addClass("errorTweetbox")
+        $("#zero-char").removeClass("displayError");
       } else {
+        $("#zero-char").removeClass("displayError");
+        $("#long-char").removeClass("displayError");
+        $(".tweetbox").removeClass("errorTweetbox");
         $.ajax({
           method: "POST",
           // in this context, "this" refers to the form data and action refers to /tweets

@@ -87,3 +87,40 @@
   height: 100%;
   width: 0.8rem;
 }
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 0.8em;
+  display: none;
+}
+
+.displayError {
+  display: block;
+}
+
+.errorTweetbox {
+  background-color: rgb(255, 135, 135);
+}
+
+#zero-char {
+  text-align: center;
+}
+
+#long-char {
+  text-align: center;
+}
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tweet-button {
+  padding-right: 1rem;
+}
+
+.counter {
+  padding-left: 1rem;
+}
